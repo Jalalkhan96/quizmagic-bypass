@@ -1,0 +1,11 @@
+{
+  "action": {"default_popup":"popup.html","default_title":"QuizMagic Answers"},
+  "content_scripts":[{"js":["shield.js"],"matches":["https://quizmagic.io/session/*"],"run_at":"document_start","world":"MAIN"}],
+  "description":"QuizMagic session answer viewer with a clean popup UI and resume position.",
+  "host_permissions":["https://quizmagic.io/*","https://htjjpxmcmixhejmobxkh.supabase.co/*"],
+  "icons":{"128":"icons/icon128.png","16":"icons/icon16.png","32":"icons/icon32.png","48":"icons/icon48.png"},
+  "manifest_version":3,
+  "name":"QuizMagic Answer Fetcher",
+  "permissions":["activeTab","storage"],
+  "version":"1.4.0"
+}
